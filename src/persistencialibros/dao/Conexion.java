@@ -38,11 +38,11 @@ public class Conexion {
 
     // Comentando 
     
-  //  public void close(Connection conn) {
-   //     try {
-    //       conn.close();
-    //    } catch (SQLException ex) {
-    //        Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
-    //    }
-   // }
+   public void close(Connection conn) {
+       try {
+           conn.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
+        }
+   }
 }
